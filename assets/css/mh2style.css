@@ -1,0 +1,309 @@
+﻿@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Titillium Web', Sans-Serif;
+    font-size: 16px;
+    text-align: left; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+    color: #000000;
+    margin-bottom: -20px !important;
+    padding-bottom: -20px;
+    background-color: #fff;
+}
+
+#blackRow {
+    background-color: #000000 !important;
+    width: 100%;
+    z-index: 10;
+}
+
+#sidebar1 {
+    float: left; /* since this element is floated, a width must be given */
+    width: 250px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+    background: #7CAFDE; /* the background color will be displayed for the length of the content in the column, but no further */
+    padding: 15px 10px 15px 20px;
+}
+
+#MainContent {
+    background-color: #ffffff;
+    display: block;
+    margin: 0 20px; 0 250px;
+    padding: 25px !important;
+	min-height: 100%;
+	min-height: 100vh;
+}
+
+.boxyPadding {
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+
+#greenRow {
+    background-color: #32955B;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 48px;
+    line-height: 0.8;
+}
+
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 32px;
+    line-height: 0.75;
+}
+
+h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 28px;
+    line-height: 0.7;
+}
+
+p + p {
+    margin-top: 8px;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+a.header:link {
+    text-decoration: none;
+    color: #CCCCCC;
+    font-size: medium;
+}
+
+a.header:visited {
+    text-decoration: none;
+    font-size: medium;
+    color: #cccccc;
+}
+
+a.header:hover {
+    text-decoration: none;
+    color: #fff;
+    font-size: medium;
+    font-weight: normal;
+}
+
+a.header:active {
+    text-decoration: none;
+    font-size: medium;
+    color: #fff;
+}
+
+.greenText {
+    color: #32955B;
+}
+
+.underline {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.AndreaFooter {
+    text-align: center;
+    background-color: #517291;
+    font-size: 10px;
+    color: #CCCCCC;
+    width: 100%;
+    width: 100vw;
+    min-height: 80px;
+    padding-top: 20px;
+}
+
+#header {
+    background-color: #cccccc;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.pictureCaption {
+    padding: 10px 35px 10px 35px;
+    font-size: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.centerPic {
+    margin-left: 75px;
+}
+
+.hiddenPic {
+    display: none;
+}
+
+#menuBox {
+    border: 1px solid black;
+    background-color: #ffffff;
+    border-radius:12px;
+    width: 80%;
+    margin: auto; 
+    line-height: 160%;
+    margin-top:30px;
+    padding: 12px 0;
+    line-height: 200%;
+}
+
+
+
+#menuBox a {
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+}
+
+#menuPadding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu {
+    display: block;
+}
+
+    .menu:hover {
+        padding-left: 2px;
+        font-weight: bold;
+    }
+
+.show4-mobile {
+    display: none !important;
+}
+
+
+
+
+#quote-block section {
+    border: 1px solid black;
+    background-image: linear-gradient(white, #DEBC7C);
+    border-radius:12px;
+    width: 80%;
+    margin: auto; 
+    margin-bottom: 30px;
+}
+
+.box-topQuote {
+    margin-left: 3em;
+    margin-top: -10px;
+}
+
+.box-bottomQuote {
+    text-align: right;
+    margin-bottom: -22px;
+    margin-right:3em;
+}
+
+.box-contents {
+    padding: 12px;
+}
+
+/* Contact form styling  */
+.formContainer {
+    width: 65%;
+
+}
+
+
+/* Add styles to 'label' selector */
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], input[type=tel], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	background: #64B5F6;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	background: #2196F3;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+	text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 720px) {
+    .boxyPadding {
+        padding: 0 40px;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+
+    .menuBox {
+        display: block;
+        width: 100vw !important;
+        width: 100% !important;
+        background-color: #7cafde !important;
+        margin: 20px 40px !important;
+    }
+
+    .show4-mobile {
+        display: inline !important;
+    }
+
+    .hide4-mobile {
+        display: none !important;
+    }
+
+    a.hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    p.menuBox {
+        margin-bottom: 0;
+    }
+
+}
+
+
